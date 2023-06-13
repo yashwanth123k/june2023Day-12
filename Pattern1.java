@@ -1,19 +1,16 @@
 import java.util.Scanner;
 public class Pattern1{
-public static void printLine(int n){
-for(int i=1;i<=n;i++){
-System.out.print(i);
-if(i<n)
-System.out.print(",");}
-}
-public static void printPattern(int n){
-for(int i=1;i<=n;i++){
-System.out.print("\n");	printLine(i);}
-}
 public static void main(String args[]){
 Scanner sc=new Scanner(System.in);
-int n=sc.nextInt();
-printPattern(n);
+for (int i=1;i<=5;i++){
+for(int s=i;s<5;s++){
+
+System.out.print(" ");
+}
+for(int j=1;j<i*2;j++){
+System.out.print("^");
+}
+System.out.println();
 
 }
-}
+}}
